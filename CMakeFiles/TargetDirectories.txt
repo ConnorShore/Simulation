@@ -1,0 +1,3 @@
+/home/cjshore12/CLionProjects/Simulation/CMakeFiles/rebuild_cache.dir
+/home/cjshore12/CLionProjects/Simulation/CMakeFiles/edit_cache.dir
+/home/cjshore12/CLionProjects/Simulation/CMakeFiles/Simulation.dir
