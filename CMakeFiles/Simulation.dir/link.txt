@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/Simulation.dir/src/main.cpp.o CMakeFiles/Simulation.dir/src/MainSimulation.cpp.o  -o Simulation -lSDL2 /usr/lib/x86_64-linux-gnu/libGLEW.so /usr/lib/x86_64-linux-gnu/libGLU.so /usr/lib/x86_64-linux-gnu/libGL.so 
+/usr/bin/c++  -g   CMakeFiles/Simulation.dir/src/main.cpp.o CMakeFiles/Simulation.dir/src/MainSimulation.cpp.o CMakeFiles/Simulation.dir/src/Sprite.cpp.o CMakeFiles/Simulation.dir/src/GLSLProgram.cpp.o  -o Simulation -lSDL2 /usr/lib/x86_64-linux-gnu/libGLEW.so /usr/lib/x86_64-linux-gnu/libGLU.so /usr/lib/x86_64-linux-gnu/libGL.so 

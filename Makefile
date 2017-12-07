@@ -123,6 +123,33 @@ Simulation/fast:
 	$(MAKE) -f CMakeFiles/Simulation.dir/build.make CMakeFiles/Simulation.dir/build
 .PHONY : Simulation/fast
 
+src/GLSLProgram.o: src/GLSLProgram.cpp.o
+
+.PHONY : src/GLSLProgram.o
+
+# target to build an object file
+src/GLSLProgram.cpp.o:
+	$(MAKE) -f CMakeFiles/Simulation.dir/build.make CMakeFiles/Simulation.dir/src/GLSLProgram.cpp.o
+.PHONY : src/GLSLProgram.cpp.o
+
+src/GLSLProgram.i: src/GLSLProgram.cpp.i
+
+.PHONY : src/GLSLProgram.i
+
+# target to preprocess a source file
+src/GLSLProgram.cpp.i:
+	$(MAKE) -f CMakeFiles/Simulation.dir/build.make CMakeFiles/Simulation.dir/src/GLSLProgram.cpp.i
+.PHONY : src/GLSLProgram.cpp.i
+
+src/GLSLProgram.s: src/GLSLProgram.cpp.s
+
+.PHONY : src/GLSLProgram.s
+
+# target to generate assembly for a file
+src/GLSLProgram.cpp.s:
+	$(MAKE) -f CMakeFiles/Simulation.dir/build.make CMakeFiles/Simulation.dir/src/GLSLProgram.cpp.s
+.PHONY : src/GLSLProgram.cpp.s
+
 src/MainSimulation.o: src/MainSimulation.cpp.o
 
 .PHONY : src/MainSimulation.o
@@ -149,6 +176,33 @@ src/MainSimulation.s: src/MainSimulation.cpp.s
 src/MainSimulation.cpp.s:
 	$(MAKE) -f CMakeFiles/Simulation.dir/build.make CMakeFiles/Simulation.dir/src/MainSimulation.cpp.s
 .PHONY : src/MainSimulation.cpp.s
+
+src/Sprite.o: src/Sprite.cpp.o
+
+.PHONY : src/Sprite.o
+
+# target to build an object file
+src/Sprite.cpp.o:
+	$(MAKE) -f CMakeFiles/Simulation.dir/build.make CMakeFiles/Simulation.dir/src/Sprite.cpp.o
+.PHONY : src/Sprite.cpp.o
+
+src/Sprite.i: src/Sprite.cpp.i
+
+.PHONY : src/Sprite.i
+
+# target to preprocess a source file
+src/Sprite.cpp.i:
+	$(MAKE) -f CMakeFiles/Simulation.dir/build.make CMakeFiles/Simulation.dir/src/Sprite.cpp.i
+.PHONY : src/Sprite.cpp.i
+
+src/Sprite.s: src/Sprite.cpp.s
+
+.PHONY : src/Sprite.s
+
+# target to generate assembly for a file
+src/Sprite.cpp.s:
+	$(MAKE) -f CMakeFiles/Simulation.dir/build.make CMakeFiles/Simulation.dir/src/Sprite.cpp.s
+.PHONY : src/Sprite.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -186,9 +240,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Simulation"
+	@echo "... src/GLSLProgram.o"
+	@echo "... src/GLSLProgram.i"
+	@echo "... src/GLSLProgram.s"
 	@echo "... src/MainSimulation.o"
 	@echo "... src/MainSimulation.i"
 	@echo "... src/MainSimulation.s"
+	@echo "... src/Sprite.o"
+	@echo "... src/Sprite.i"
+	@echo "... src/Sprite.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

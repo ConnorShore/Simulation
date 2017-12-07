@@ -6,14 +6,48 @@
 
 #IncludeRegexTransform: 
 
+/home/cjshore12/CLionProjects/Simulation/src/GLSLProgram.cpp
+GLSLProgram.h
+/home/cjshore12/CLionProjects/Simulation/src/GLSLProgram.h
+iostream
+-
+fstream
+-
+vector
+-
+
+/home/cjshore12/CLionProjects/Simulation/src/GLSLProgram.h
+string
+-
+GL/glew.h
+-
+
 /home/cjshore12/CLionProjects/Simulation/src/MainSimulation.cpp
+fstream
+-
 MainSimulation.h
 /home/cjshore12/CLionProjects/Simulation/src/MainSimulation.h
-GL/glew.h
+iostream
 -
 
 /home/cjshore12/CLionProjects/Simulation/src/MainSimulation.h
 SDL.h
+-
+GL/glew.h
+-
+Sprite.h
+/home/cjshore12/CLionProjects/Simulation/src/Sprite.h
+GLSLProgram.h
+/home/cjshore12/CLionProjects/Simulation/src/GLSLProgram.h
+
+/home/cjshore12/CLionProjects/Simulation/src/Sprite.cpp
+Sprite.h
+/home/cjshore12/CLionProjects/Simulation/src/Sprite.h
+
+/home/cjshore12/CLionProjects/Simulation/src/Sprite.h
+glm/glm.hpp
+-
+GL/glew.h
 -
 
 /home/cjshore12/CLionProjects/Simulation/src/main.cpp

@@ -2,50 +2,59 @@
 // Created by cjshore12 on 12/1/17.
 //
 
-#include "MainSimulation.h"
-#include <GL/glew.h>
 
-SDL_GLContext mainContext;
+#include <fstream>
+#include "MainSimulation.h"
+#include <iostream>
+
+MainSimulation::MainSimulation() : _screenWidth(1280), _screenHeight(720)
+{
+
+}
+
+MainSimulation::~MainSimulation()
+{
+
+}
 
 void MainSimulation::init()
 {
-    isRunning = true;
+    _isRunning = true;
 
-    _window = SDL_CreateWindow("Simple Simulation", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
+    _window = SDL_CreateWindow("Simulation", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
                                _screenWidth, _screenHeight, SDL_WINDOW_OPENGL);
 
-    mainContext = SDL_GL_CreateContext(_window);
-
-    SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
-
-    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
-    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 2);
+    SDL_GLContext glContext = SDL_GL_CreateContext(_window);
 
     SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
 
-    SDL_GL_SetSwapInterval(1);
+    if(glewInit() != GLEW_OK) {
+        std::cerr << "GLEW FAILED TO INITIALIZE" << std::endl;
+    }
 
-    glewExperimental = GL_TRUE;
-    glewInit();
+    glClearColor(0.2f, 0.3f, 0.75f, 1.0f);
+    glViewport(0, 0, _screenWidth, _screenHeight);
 
-    glClearColor(0.2f, 0.5f, 0.85f, 1.0f);
-    glViewport(0.0f, 0.0f, 1.0f, 1.0f);
-    glEnable(GL_BLEND);
-    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    initShaders();
+
+    _sprite.init(-1.0f, -1.0f, 1.0f, 1.0f);
+}
+
+
+
+void MainSimulation::initShaders()
+{
+    _staticProgram.compileShaders("Shaders/staticShader.vert", "Shaders/staticShader.frag");
+    _staticProgram.bindAttribute("vertexPosition");
+    _staticProgram.linkShaders();
 }
 
 void MainSimulation::input()
 {
     SDL_Event event;
     while(SDL_PollEvent(&event)) {
-        if(event.type == SDL_QUIT)
-            isRunning = false;
-        if(event.type == SDL_KEYDOWN) {
-            switch(event.key.keysym.sym) {
-                case SDLK_ESCAPE:
-                    isRunning = false;
-                    break;
-            }
+        if(event.type == SDL_QUIT) {
+            _isRunning = false;
         }
     }
 }
@@ -54,35 +63,36 @@ void MainSimulation::update()
 {
 
 }
-
 void MainSimulation::render()
 {
     glClear(GL_COLOR_BUFFER_BIT);
 
+    _staticProgram.start();
+
+    _sprite.draw();
+
+    _staticProgram.stop();
 
     SDL_GL_SwapWindow(_window);
 }
 
-void MainSimulation::mainLoop()
+void MainSimulation::simulationLoop()
 {
-    while(isRunning) {
+    while(_isRunning) {
         input();
         update();
         render();
     }
 }
 
-
 void MainSimulation::cleanUp()
 {
-    SDL_GL_DeleteContext(mainContext);
-    SDL_DestroyWindow(_window);
-    SDL_Quit();
+
 }
 
 void MainSimulation::run()
 {
     init();
-    mainLoop();
+    simulationLoop();
     cleanUp();
 }

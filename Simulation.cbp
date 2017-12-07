@@ -86,10 +86,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/cjshore12/CLionProjects/Simulation/src/GLSLProgram.cpp">
+			<Option target="Simulation"/>
+		</Unit>
+		<Unit filename="/home/cjshore12/CLionProjects/Simulation/src/GLSLProgram.h">
+			<Option target="Simulation"/>
+		</Unit>
 		<Unit filename="/home/cjshore12/CLionProjects/Simulation/src/MainSimulation.cpp">
 			<Option target="Simulation"/>
 		</Unit>
 		<Unit filename="/home/cjshore12/CLionProjects/Simulation/src/MainSimulation.h">
+			<Option target="Simulation"/>
+		</Unit>
+		<Unit filename="/home/cjshore12/CLionProjects/Simulation/src/Sprite.cpp">
+			<Option target="Simulation"/>
+		</Unit>
+		<Unit filename="/home/cjshore12/CLionProjects/Simulation/src/Sprite.h">
 			<Option target="Simulation"/>
 		</Unit>
 		<Unit filename="/home/cjshore12/CLionProjects/Simulation/src/main.cpp">

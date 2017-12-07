@@ -6,23 +6,34 @@
 #define SIMULATION_MAINSIMULATION_H
 
 #include <SDL.h>
+#include <GL/glew.h>
+
+#include "Sprite.h"
+#include "GLSLProgram.h"
+
 
 class MainSimulation {
 public:
-    MainSimulation(int screenWidth, int screenHeight) : _screenWidth(screenWidth), _screenHeight(screenHeight) {}
+    MainSimulation();
+    ~MainSimulation();
 
     void run();
 
 private:
-    SDL_Window* _window;
+    bool _isRunning = false;
     int _screenWidth, _screenHeight;
-    bool isRunning;
+
+    SDL_Window* _window;
+
+    Sprite _sprite;
+    GLSLProgram _staticProgram;
 
     void init();
+    void initShaders();
     void input();
     void update();
     void render();
-    void mainLoop();
+    void simulationLoop();
     void cleanUp();
 };
 

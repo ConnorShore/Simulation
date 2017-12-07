@@ -1,7 +1,7 @@
 #include "MainSimulation.h"
 
 int main(int argc, char* argv[]) {
-    MainSimulation simulation(1280, 720);
+    MainSimulation simulation;
     simulation.run();
     return 0;
 }
