@@ -104,6 +104,9 @@
 		<Unit filename="/home/cjshore12/CLionProjects/Simulation/src/Sprite.h">
 			<Option target="Simulation"/>
 		</Unit>
+		<Unit filename="/home/cjshore12/CLionProjects/Simulation/src/Vertex.h">
+			<Option target="Simulation"/>
+		</Unit>
 		<Unit filename="/home/cjshore12/CLionProjects/Simulation/src/main.cpp">
 			<Option target="Simulation"/>
 		</Unit>

@@ -11,6 +11,6 @@ include_directories(${SDL2_INCLUDE_DIRS})
 include_directories(${OpenGL_INCLUDE_DIRS})
 include_directories(${GLEW_INCLUDE_DIRS})
 
-add_executable(Simulation src/main.cpp src/MainSimulation.cpp src/MainSimulation.h src/Sprite.cpp src/Sprite.h src/GLSLProgram.cpp src/GLSLProgram.h)
+add_executable(Simulation src/main.cpp src/MainSimulation.cpp src/MainSimulation.h src/Sprite.cpp src/Sprite.h src/GLSLProgram.cpp src/GLSLProgram.h src/Vertex.h)
 
 target_link_libraries(Simulation ${SDL2_LIBRARIES} ${GLEW_LIBRARIES} ${OPENGL_LIBRARIES})

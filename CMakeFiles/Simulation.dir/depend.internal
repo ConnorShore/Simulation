@@ -9,6 +9,7 @@ CMakeFiles/Simulation.dir/src/MainSimulation.cpp.o
  /home/cjshore12/CLionProjects/Simulation/src/MainSimulation.cpp
  /home/cjshore12/CLionProjects/Simulation/src/MainSimulation.h
  /home/cjshore12/CLionProjects/Simulation/src/Sprite.h
+ /home/cjshore12/CLionProjects/Simulation/src/Vertex.h
  /usr/include/SDL2/SDL.h
  /usr/include/SDL2/SDL_assert.h
  /usr/include/SDL2/SDL_atomic.h
@@ -56,10 +57,12 @@ CMakeFiles/Simulation.dir/src/MainSimulation.cpp.o
 CMakeFiles/Simulation.dir/src/Sprite.cpp.o
  /home/cjshore12/CLionProjects/Simulation/src/Sprite.cpp
  /home/cjshore12/CLionProjects/Simulation/src/Sprite.h
+ /home/cjshore12/CLionProjects/Simulation/src/Vertex.h
 CMakeFiles/Simulation.dir/src/main.cpp.o
  /home/cjshore12/CLionProjects/Simulation/src/GLSLProgram.h
  /home/cjshore12/CLionProjects/Simulation/src/MainSimulation.h
  /home/cjshore12/CLionProjects/Simulation/src/Sprite.h
+ /home/cjshore12/CLionProjects/Simulation/src/Vertex.h
  /home/cjshore12/CLionProjects/Simulation/src/main.cpp
  /usr/include/SDL2/SDL.h
  /usr/include/SDL2/SDL_assert.h

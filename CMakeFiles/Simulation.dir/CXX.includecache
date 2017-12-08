@@ -49,6 +49,14 @@ glm/glm.hpp
 -
 GL/glew.h
 -
+Vertex.h
+/home/cjshore12/CLionProjects/Simulation/src/Vertex.h
+
+/home/cjshore12/CLionProjects/Simulation/src/Vertex.h
+GL/glew.h
+-
+glm/glm.hpp
+-
 
 /home/cjshore12/CLionProjects/Simulation/src/main.cpp
 MainSimulation.h

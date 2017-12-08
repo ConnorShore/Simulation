@@ -8,6 +8,7 @@ CMakeFiles/Simulation.dir/src/MainSimulation.cpp.o: src/GLSLProgram.h
 CMakeFiles/Simulation.dir/src/MainSimulation.cpp.o: src/MainSimulation.cpp
 CMakeFiles/Simulation.dir/src/MainSimulation.cpp.o: src/MainSimulation.h
 CMakeFiles/Simulation.dir/src/MainSimulation.cpp.o: src/Sprite.h
+CMakeFiles/Simulation.dir/src/MainSimulation.cpp.o: src/Vertex.h
 CMakeFiles/Simulation.dir/src/MainSimulation.cpp.o: /usr/include/SDL2/SDL.h
 CMakeFiles/Simulation.dir/src/MainSimulation.cpp.o: /usr/include/SDL2/SDL_assert.h
 CMakeFiles/Simulation.dir/src/MainSimulation.cpp.o: /usr/include/SDL2/SDL_atomic.h
@@ -55,10 +56,12 @@ CMakeFiles/Simulation.dir/src/MainSimulation.cpp.o: /usr/include/SDL2/close_code
 
 CMakeFiles/Simulation.dir/src/Sprite.cpp.o: src/Sprite.cpp
 CMakeFiles/Simulation.dir/src/Sprite.cpp.o: src/Sprite.h
+CMakeFiles/Simulation.dir/src/Sprite.cpp.o: src/Vertex.h
 
 CMakeFiles/Simulation.dir/src/main.cpp.o: src/GLSLProgram.h
 CMakeFiles/Simulation.dir/src/main.cpp.o: src/MainSimulation.h
 CMakeFiles/Simulation.dir/src/main.cpp.o: src/Sprite.h
+CMakeFiles/Simulation.dir/src/main.cpp.o: src/Vertex.h
 CMakeFiles/Simulation.dir/src/main.cpp.o: src/main.cpp
 CMakeFiles/Simulation.dir/src/main.cpp.o: /usr/include/SDL2/SDL.h
 CMakeFiles/Simulation.dir/src/main.cpp.o: /usr/include/SDL2/SDL_assert.h

@@ -37,7 +37,8 @@ void MainSimulation::init()
 
     initShaders();
 
-    _sprite.init(-1.0f, -1.0f, 1.0f, 1.0f);
+    Color red(255, 0, 0, 255);
+    _sprite.init(-1.0f, -1.0f, 1.0f, 1.0f, red);
 }
 
 
@@ -46,6 +47,7 @@ void MainSimulation::initShaders()
 {
     _staticProgram.compileShaders("Shaders/staticShader.vert", "Shaders/staticShader.frag");
     _staticProgram.bindAttribute("vertexPosition");
+    _staticProgram.bindAttribute("vertexColor");
     _staticProgram.linkShaders();
 }
 
